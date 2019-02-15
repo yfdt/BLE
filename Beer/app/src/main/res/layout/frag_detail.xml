@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/detail_m_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/actionbar_container"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/detail_m_actionbar"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+
+
+            <TextView
+                android:id="@+id/detail_m_status"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="@string/frag_detail_status"
+                android:layout_marginLeft="24dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/text_green"
+                />
+
+            <TextView
+                android:id="@+id/detail_m_name"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginRight="24dp"
+                android:gravity="center"
+                />
+
+            <View
+                android:id="@+id/detail_m_line1"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_below="@+id/detail_m_status"
+                android:background="@color/text_gray2"
+                />
+
+            <TextView
+                android:id="@+id/detail_m_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frag_detail_tips"
+                android:layout_below="@+id/detail_m_line1"
+                android:paddingTop="24dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="74dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_red"
+                />
+
+            <TextView
+                android:id="@+id/detail_m_record_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/text_gray"
+                android:layout_below="@+id/detail_m_tips"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/frag_detail_record_text"
+
+                />
+
+            <TextView
+                android:id="@+id/detail_m_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/detail_m_record_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24dp"
+
+                android:textColor="@color/text_yellow"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/detail_m_start_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frag_detail_start"
+                android:textSize="18sp"
+                android:textColor="@color/text_gray"
+                android:layout_below="@+id/detail_m_record_text"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:id="@+id/detail_m_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/detail_m_start_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24dp"
+                android:textSize="18sp"
+                android:textColor="@color/text_yellow"
+
+                />
+
+
+            <TextView
+                android:id="@+id/detail_m_maintenance_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frag_detail_maintenance"
+                android:layout_below="@+id/detail_m_start_text"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="12dp"
+                android:textSize="18sp"
+                android:textColor="@color/text_gray"
+                android:layout_marginBottom="24dp"
+                />
+
+        <TextView
+            android:id="@+id/detail_m_maintenance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/detail_m_maintenance_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:textSize="18sp"
+            android:textColor="@color/text_yellow"
+            />
+
+        <TextView
+            android:id="@+id/detail_m_line2"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_below="@+id/detail_m_maintenance_text"
+            android:background="@color/text_gray2"
+            />
+
+
+           <TextView
+               android:id="@+id/detail_m_failure_text"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/white"
+               android:text="@string/frag_detail_failure_text"
+               android:paddingTop="14dp"
+               android:paddingLeft="24dp"
+               android:layout_below="@+id/detail_m_line2"
+               android:paddingBottom="6dp"
+               android:textSize="18sp"
+               android:textColor="@color/text_gray"
+               />
+
+            <TextView
+                android:id="@+id/detail_m_failure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_m_failure_text"
+                android:textSize="18sp"
+                android:textColor="@color/text_yellow"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingBottom="15dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_m_failure"
+                android:background="@color/text_gray2"
+                >
+
+                 <TextView
+                     android:id="@+id/detail_m_advice_text"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="24dp"
+                     android:layout_marginTop="30dp"
+                     android:text="@string/frag_detail_advice"
+                     android:textColor="@color/text_gray"
+                     android:textSize="18sp"
+                     />
+                
+                <EditText
+                    android:id="@+id/detail_m_advice"
+                    android:layout_below="@+id/detail_m_advice_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="142dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="18dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:gravity="left|top"
+                    android:scrollbars="vertical"
+                    android:background="@drawable/shape_rectangle_white"
+                    />
+
+
+                <TextView
+                    android:id="@+id/detail_m_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/detail_m_advice"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="@string/frag_detail_submit"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:background="@drawable/selector_red"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

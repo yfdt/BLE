@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_gray2"
+    >
+
+    <include
+        android:id="@+id/add_pay_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/actionbar_container"
+        />
+
+    <TextView
+        android:id="@+id/add_pay_serial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_pay_serial"
+        android:layout_below="@+id/add_pay_actionbar"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="24dp"
+        android:textColor="@color/text_gray"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+
+    <com.stripe.android.view.CardInputWidget
+        android:id="@+id/add_pay_card"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/add_pay_serial"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/shape_rectangle_white"
+        />
+
+
+    <TextView
+        android:id="@+id/add_pay_submit"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:text="@string/bill_add"
+        android:gravity="center"
+        android:background="@drawable/selector_blue"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+
+
+</RelativeLayout>

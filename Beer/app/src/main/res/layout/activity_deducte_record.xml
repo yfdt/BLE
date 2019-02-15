@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/deducte_record_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/actionbar_container"
+        />
+
+
+    <com.blue.elephant.custom.listview.XListView
+        android:id="@+id/deducte_record_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/deducte_record_actionbar"
+        android:layout_marginTop="7dp"
+        android:divider="@null"
+        />
+
+
+
+</RelativeLayout>

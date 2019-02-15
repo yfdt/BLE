@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/bike_info_mwnu_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/selector_blue"
+        android:gravity="center"
+        android:text="@string/bike_info_menu_cancel"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/bike_info_menu_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="96dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_rectangle_white"
+        >
+        <TextView
+            android:id="@+id/bike_info_menu_forbidden"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/bike_info_menu_forbidden"
+            android:textSize="18sp"
+            android:textColor="@color/text_gray"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/bike_info_menu_active"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/bike_info_menu_active"
+            android:textSize="18sp"
+            android:textColor="@color/text_gray"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_gray2"
+            />
+
+        <TextView
+            android:id="@+id/bike_info_menu_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/bike_info_menu_edit"
+            android:textSize="18sp"
+            android:textColor="@color/text_gray"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_gray2"
+            />
+
+        <TextView
+            android:id="@+id/bike_info_menu_track"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/bike_info_menu_track"
+            android:textSize="18sp"
+            android:textColor="@color/text_gray"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_gray2"
+            />
+
+        <TextView
+            android:id="@+id/bike_info_menu_lock"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/bike_info_menu_lock"
+            android:textSize="18sp"
+            android:textColor="@color/text_gray"
+            android:gravity="center"
+            />
+        <View
+            android:id="@+id/bike_info_menu_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_gray2"
+            />
+
+        <TextView
+            android:id="@+id/bike_info_menu_unlock"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/bike_info_menu_unlock"
+            android:textSize="18sp"
+            android:textColor="@color/text_gray"
+            android:gravity="center"
+            />
+        <View
+            android:id="@+id/bike_info_menu_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_gray2"
+            />
+
+        <TextView
+            android:id="@+id/bike_info_menu_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/bike_info_menu_update"
+            android:textSize="18sp"
+            android:textColor="@color/text_gray"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

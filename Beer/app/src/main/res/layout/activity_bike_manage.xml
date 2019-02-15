@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <RelativeLayout
+       android:id="@+id/bike_manage_actionbar"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:background="@color/colorPrimary"
+       >
+
+
+       <RelativeLayout
+           android:id="@+id/bike_manage_top"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:textColor="@color/white"
+               android:textSize="18sp"
+                android:text="@string/bike_manage_title"
+               />
+           
+           <ImageView
+               android:id="@+id/bike_manage_search"
+               android:layout_width="45dp"
+               android:layout_height="45dp"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="6dp"
+               android:padding="14dp"
+               android:src="@mipmap/bike_manage_search"
+               />
+       </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/bike_manage_second"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:visibility="visible"
+          >
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_centerInParent="true"
+              android:layout_marginLeft="42dp"
+              android:layout_marginRight="65dp"
+              android:background="@color/white"
+              >
+            <EditText
+                android:id="@+id/bike_manage_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center|left"
+                android:paddingRight="12dp"
+                android:hint="@string/bike_manage_menu_hint_edit"
+                android:textColorHint="#9B9B9B"
+                android:textSize="12sp"
+                android:paddingLeft="8dp"
+                android:inputType="number"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                />
+
+              <ImageView
+                  android:id="@+id/bike_manage_search_nu"
+                  android:layout_width="18dp"
+                  android:layout_height="18dp"
+                  android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginRight="12dp"
+                  android:src="@mipmap/bike_manage_search"
+                  />
+
+
+          </RelativeLayout>
+
+
+          <TextView
+              android:id="@+id/bike_manage_menu_cancel"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_alignParentRight="true"
+              android:text="@string/bike_manage_menu_cancel"
+              android:layout_marginRight="10dp"
+              android:textColor="@color/white"
+              android:textSize="14sp"
+              />
+
+
+      </RelativeLayout>
+
+
+
+       <ImageView
+           android:id="@+id/actionbar_left"
+           android:layout_width="48dp"
+           android:layout_height="48dp"
+           android:layout_centerVertical="true"
+           android:layout_alignParentLeft="true"
+           android:padding="10dp"
+           android:scaleType="centerInside"
+           android:src="@mipmap/back_arraw"
+           />
+
+   </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bike_manage_submenu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/bike_manage_actionbar"
+        android:background="@color/blue_light"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/bike_manage_serial"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/bike_manage_power"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+
+        <RelativeLayout
+            android:id="@+id/bike_manage_action"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/bike_manage_classic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bike_manage_menu_all"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_toRightOf="@+id/bike_manage_classic"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/bike_manage_arraw"
+                android:layout_marginLeft="6dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <com.blue.elephant.custom.listview.XListView
+        android:id="@+id/bike_manage_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bike_manage_submenu"
+        android:divider="@null"
+        android:layout_marginTop="6dp"
+        />
+
+    
+    <ImageView
+        android:id="@+id/bike_manage_add"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="40dp"
+        android:padding="3dp"
+        android:src="@mipmap/bike_manage_add"
+        />
+    
+
+</RelativeLayout>

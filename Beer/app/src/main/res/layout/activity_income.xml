@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_gray2"
+    >
+
+    <include
+        android:id="@+id/income_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/actionbar_container"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/income_actionbar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/income_date"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="24dp"
+                android:textSize="18sp"
+                android:textColor="@color/text_gray"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/income_select"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:layout_alignBaseline="@+id/income_date"
+                android:text="@string/income_select"
+                android:background="@drawable/selector_blue"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:layout_marginRight="24dp"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/income_overview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/income_date"
+                >
+
+
+
+                <RelativeLayout
+                    android:id="@+id/income_today_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/shape_rectangle_white"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/income_t_order_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/income_order"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_t_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/income_t_order_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/income_t_amount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/income_t_order_text"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/income_amount"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_t_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/income_t_amount_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_t_insurance_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/income_t_amount_text"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/income_insurance"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/income_t_insurance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/income_t_insurance_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/income_t_real_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_below="@+id/income_t_insurance_text"
+                        android:text="@string/income_real"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="18dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_t_real"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/income_t_real_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/income_today"
+                    android:text="@string/income_today"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:background="#F5A623"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="48dp"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/income_week_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/income_today_container"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/shape_rectangle_white"
+                    >
+
+                    <TextView
+                        android:id="@+id/income_w_order_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/income_order"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="34dp"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/income_w_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp"
+                        android:layout_alignBaseline="@id/income_w_order_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_w_amount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/income_amount"
+                        android:layout_below="@+id/income_w_order_text"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="12dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_w_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/income_w_amount_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/income_w_insurance_text"
+                        android:layout_below="@+id/income_w_amount_text"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/income_insurance"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_w_insurance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/income_w_insurance_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/income_w_real_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/income_real"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        android:layout_below="@+id/income_w_insurance_text"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="24dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_w_real"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14dp"
+                        android:layout_alignBaseline="@+id/income_w_real_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/income_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/income_week"
+                    android:textColor="@color/white"
+                    android:background="#F5A623"
+                    android:textSize="14dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="7dp"
+                    android:layout_below="@+id/income_today_container"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="48dp"
+                    />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/income_m_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/income_week_container"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/shape_rectangle_white"
+                    >
+
+                    <TextView
+                        android:id="@+id/income_m_order_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="37dp"
+                        android:text="@string/income_order"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_m_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/income_m_order_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_m_amount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/income_m_order_text"
+                        android:text="@string/income_amount"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="24dp"
+                        />
+
+
+
+                    <TextView
+                        android:id="@+id/income_m_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/income_m_amount_text"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/income_amount"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginTop="12dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_m_insurance_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/income_m_amount_text"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/income_insurance"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_m_insurance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/income_m_insurance_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_m_real_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/income_m_insurance_text"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:text="@string/income_real"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_m_real"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/income_m_real_text"
+                        android:layout_marginRight="24dp"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="24dp"
+                        />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/income_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/income_week_container"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="48dp"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/income_month"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:background="#F5A623"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/income_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/income_date"
+                android:visibility="gone"
+                >
+
+
+
+                <RelativeLayout
+                    android:id="@+id/income_search_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/shape_rectangle_white"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/income_search_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/income_order"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_search_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/income_search_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/income_search_amount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/income_search_text"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/income_amount"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_search_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/income_search_amount_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_search_insurance_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/income_search_amount_text"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/income_insurance"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/income_search_insurance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/income_search_insurance_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/income_search_real_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_below="@+id/income_search_insurance_text"
+                        android:text="@string/income_real"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="18dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/income_search_real"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/income_search_real_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

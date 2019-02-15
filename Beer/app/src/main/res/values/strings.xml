@@ -1,0 +1,384 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">BEER</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="login_account_hint">Please enter you phone number</string>
+    <string name="login_pass_hint">Please enter your password</string>
+    <string name="login_submit">Login</string>
+    <string name="login_load">Logging in to the account</string>
+    <string name="login_title">Operator Login</string>
+    <string name="login_error">Login failed</string>
+
+    <string name="main_rent">Rental</string>
+    <string name="main_back_office">Back Office</string>
+    <string name="main_maintenance">Maintenance</string>
+    <string name="main_menu_name">Jason</string>
+    <string name="main_menu_income">Income Overview</string>
+    <string name="main_menu_order">Order Management</string>
+    <string name="main_menu_bike">Bike Management</string>
+    <string name="main_menu_map">Bike Map</string>
+    <string name="main_menu_maintenance">Maintenance Management</string>
+    <string name="main_menu_billing">Billing</string>
+    <string name="main_menu_record">Deduction Record</string>
+    <string name="main_menu_out">Log out</string>
+    <string name="main_drawer_open">Open Drawer</string>
+    <string name="main_drawer_close">Close Drawer</string>
+    <string name="main_title">Select Option</string>
+    <string name="main_login_out">Exiting current account</string>
+    <string name="main_no_card">Please bind the bank card to facilitate settlement after renting a car.</string>
+    <string name="main_load">loading data</string>
+    <string name="error_failure">Request failed</string>
+
+    <string name="scan_title">Scan an Elephent</string>
+    <string name="qr_text_light_on">TurnOnFlash</string>
+    <string name="qr_text_light_off">TurnOffFlash</string>
+    <string name="qr_tip_open_camera">Please manually open camera permissions</string>
+    <string name="scan_number">Serial NO.</string>
+    <string name="scan_flash">Flashlight</string>
+    <string name="scan_load_data">Inquiring about vehicle rental status</string>
+    <string name="scan_text_rent">The bike has been rented, please rent another bike</string>
+    <string name="scan_text_main">The bike is currently being repaired, please use another bike</string>
+
+
+    <string name="serial_hint_text">please enter the Bike No.</string>
+    <string name="serial_next">Next</string>
+    <string name="serial_title">Enter the Bike No.</string>
+
+
+
+    <string name="upload_title">Upload Contract</string>
+    <string name="upload_tips">Please take a photo of the rental contract and upload it.</string>
+    <string name="upload_camera">Click and take a phone</string>
+    <string name="upload_submit">Upload</string>
+    <string name="upload_bike_code_error">the vehicle number is lost, please rescan</string>
+    <string name="upload_load">Renting a bike, please wait</string>
+    <string name="upload_pic_error">Image failed to save, please click on the picture to re-capture</string>
+
+
+    <string name="insurance_title">Insurance</string>
+    <string name="insurance_ok">Yes</string>
+    <string name="insurance_no">No</string>
+
+    <string name="confirm_title">Confirmation of Rental</string>
+    <string name="confirm_tips">Make sure all the information is correct.Click[start] ,the system begins charging.</string>
+    <string name="confirm_order">Order Contract:</string>
+    <string name="confirm_order_text">View</string>
+    <string name="confirm_insurance">Insurance:</string>
+    <string name="confirm_serial">Bike No:</string>
+    <string name="confirm_submit">Start</string>
+    <string name="confirm_error">Repair information failed to load, please try again</string>
+    <string name="confirm_load">Loading bike information</string>
+    <string name="confirm_load_error">The bike connection failed. Please try again!</string>
+
+
+    <string name="order_title">Order Details</string>
+    <string name="order_tips">Please confirm that the following content is corrent,click[Stop],the system stops charging.</string>
+    <string name="order_serial">Order No:</string>
+    <string name="order_contract">Order Contract:</string>
+    <string name="order_insurance">Insurance:</string>
+    <string name="order_start">Starting Time:</string>
+    <string name="order_contract_text">View</string>
+    <string name="order_submit">Stop</string>
+    <string name="order_status_text">Bike OFF</string>
+    <string name="order_status">BE01</string>
+    <string name="order_end">Ending Time:</string>
+    <string name="order_riding">Riding Time:</string>
+    <string name="order_charge">Riding Charge:</string>
+    <string name="order_profit">Operator Profit:</string>
+    <string name="order_total">Total Cost:</string>
+    <string name="order_period"><xliff:g id="hour">%d</xliff:g>H<xliff:g id="min">%d</xliff:g>min</string>
+    <string name="order_detail_load">Loading order details</string>
+    <string name="order_detail_stop">End the order, or the lease expires</string>
+    <string name="order_detail_finish">Updating vehicle status</string>
+    <string name="order_detail_error">Order data is missing, please try again</string>
+
+    <string name="maintenance_rent_tip">The current bike is being rented, please wait</string>
+    <string name="frag_confirm_title">Confirmation of Maintenance</string>
+    <string name="frag_confirm_tips">Please fill in the following information,confirm the correct,click[Start],unlock the bike!</string>
+    <string name="frag_confirm_serial_text">Bike No:</string>
+    <string name="frag_confirm_serial">BE01</string>
+    <string name="frag_confirm_failure">Cause of failure:</string>
+    <string name="frag_confirm_time">Maintenance time:</string>
+    <string name="frag_confirm_submit">Start</string>
+    <string name="frag_detail_advice_empty">Please enter the reply content of the repair</string>
+
+    <string-array name="frag_confirm_array_time">
+        <item >30 Min</item>
+        <item >1 H</item>
+        <item >1 H 30 Min</item>
+        <item >2 H</item>
+        <item >2 H 30 Min</item>
+        <item >3 H</item>
+        <item >3 H 30 Min</item>
+        <item >4 H</item>
+        <item >4 H 0 Min</item>
+
+    </string-array>
+
+
+    <string name="frag_detail_title">Maintenance details</string>
+    <string name="frag_detail_status">Bike ON</string>
+    <string name="frag_detail_name">BE01</string>
+    <string name="frag_detail_tips">Please complete within the maintenance time, the overtime bike will be automatically locked.</string>
+    <string name="frag_detail_record_text">Record No:</string>
+    <string name="frag_detail_start">Starting Time:</string>
+    <string name="frag_detail_maintenance">Maintenance Time:</string>
+    <string name="frag_detail_failure_text">Cause of failure:</string>
+    <string name="frag_detail_advice">Maintenance Advice:</string>
+    <string name="frag_detail_submit">Stop</string>
+    <string name="frag_detail_load">Load repair information</string>
+    <string name="frag_detail_finish">Repair is complete, uploading information</string>
+
+    <string name="main_detail_title">Maintenance Details</string>
+
+    <string name="income_title">Income Overview</string>
+    <string name="income_select">Selection Date</string>
+    <string name="income_today">Statistics for Today</string>
+    <string name="income_week">Statistics for this week</string>
+    <string name="income_month">Statistics for this month</string>
+    <string name="income_order">Order Quantity</string>
+    <string name="income_amount">Order Amount</string>
+    <string name="income_insurance">Insurance</string>
+    <string name="income_real">Real Income</string>
+    <string name="income_load">Load vehicle revenue data</string>
+    <string name="income_menu_start">Choose start time</string>
+    <string name="income_menu_end">Select end time</string>
+    <string name="income_menu_start_t">Please select the start time</string>
+    <string name="income_menu_end_t">Please select the end time</string>
+    <string name="income_menu_time_error">Request exception, please re-select</string>
+    <string name="income_menu_time_before">Please ensure that the end time is later than the start time</string>
+
+    <string name="order_list_title">Order List</string>
+    <string name="order_list_serial">Bike No:</string>
+    <string name="order_list_start">Starting:</string>
+    <string name="order_list_riding">Riding:</string>
+    <string name="order_list_menu_all">All</string>
+    <string name="order_menu_all">All</string>
+    <string name="order_menu_history">Completed</string>
+    <string name="order_menu_rent">Pending</string>
+    <string name="order_list_price_status">Occupying</string>
+
+    <string name="bike_manage_title">Bike Management</string>
+    <string name="bike_manage_serial">Bike No</string>
+    <string name="bike_manage_power">Power</string>
+    <string name="bike_manage_menu_all">All</string>
+    <string name="bike_manage_menu_cancel">Cancel</string>
+    <string name="bike_manage_menu_hint_edit">please enter the bike number</string>
+    <string name="bike_manage_load">Loading vehicle information</string>
+    <string name="bike_manage_empty">Vehicle information search failed, please refresh and try again</string>
+    <string name="bike_manage_menu_rent">Occupied</string>
+    <string name="bike_manage_menu_no_rent">Unoccupied </string>
+    <string name="bike_manage_menu_disable">Disable</string>
+
+    <string name="add_title">Add Bike</string>
+    <string name="add_serial">Bike No:</string>
+    <string name="add_frame">Frame No:</string>
+    <string name="add_imei">IMEI:</string>
+    <string name="add_blue">Bluetooth No:</string>
+    <string name="add_submit">Save</string>
+    <string name="add_serial_empty">enter the bike number</string>
+    <string name="add_frame_empty">enter the frame number</string>
+    <string name="add_ime_empty">enter the IMEI code</string>
+    <string name="add_bluetooth_empty">enter the bluetooth Number</string>
+    <string name="add_load">Adding vehicle, please wait</string>
+    <string name="add_serial_hint">Please enter the vehicle serial number</string>
+    <string name="add_frame_hint">Please enter the frame number</string>
+    <string name="add_imei_hint">Please enter the IMEI number</string>
+    <string name="add_bluetooth_hint">Please enter the Bluetooth number</string>
+    <string name="add_edit_title">Edit Bike</string>
+    <string name="add_edit_tip">Requesting, please wait</string>
+
+    <string name="person_title">Personal Information</string>
+    <string name="person_info">Personal Information</string>
+    <string name="person_name_text">Name:</string>
+    <string name="person_email_text">Email:</string>
+    <string name="person_phone_text">Phone:</string>
+    <string name="person_address_text">Address:</string>
+    <string name="person_tips_text">TIP:If you need to modify the above information please contact the platform customer service.</string>
+    <string name="person_load">Loading personal information</string>
+
+    <string name="item_info_frame">Frame No:</string>
+    <string name="item_info_vehicle">Bike No:</string>
+    <string name="item_info_bluetooth">Bluetooth:</string>
+    <string name="item_info_imei_code">GPS:</string>
+    <string name="item_info_termal">Terminal Status </string>
+    <string name="item_info_vehicle_status">Bike Status:</string>
+    <string name="item_info_gps">GPS Status:</string>
+    <string name="item_info_last">GPS location time:</string>
+    <string name="empty"></string>
+    <string name="item_info_battery">Battery:</string>
+
+    <string name="bike_info_title">Bike Information</string>
+    <string name="bike_info_menu_cancel">Cancel</string>
+    <string name="bike_info_menu_forbidden">Forbidden</string>
+    <string name="bike_info_menu_edit">Edit</string>
+    <string name="bike_info_menu_track">Historical Track</string>
+    <string name="bike_info_menu_lock">Remote Lock</string>
+    <string name="bike_info_menu_unlock">Remote Unlock</string>
+    <string name="bike_info_menu_update">Update Bluetooth</string>
+    <string name="bike_info_menu_active">Active</string>
+    <string name="bike_info_gps_online">Online</string>
+    <string name="bike_info_gps_offline">Offline</string>
+    <string name="bike_info_status_norent">Available</string>
+    <string name="bike_info_status_rent">Leased</string>
+    <string name="bike_info_status_able">Active</string>
+    <string name="bike_info_status_disable">Not Enabled</string>
+    <string name="bike_info_disable_tip">Disabling bike</string>
+    <string name="bike_info_able_tip">Activating vehicle</string>
+    <string name="bike_info_tip">Requesting</string>
+    <string name="bike_info_statue_r">Unobstructed</string>
+    <string name="bike_info_statue_ur">Closed or low signal</string>
+    <string name="bike_info_active_message">Bike has been activated</string>
+    <string name="bike_info_disable_message">Bike has been disabled</string>
+    <string name="bike_info_lock_message">Bike locked successfully</string>
+    <string name="bike_info_unlock_message">Bike was unlocked successfully</string>
+
+    <string name="track_title">Historical Track</string>
+    <string name="track_load">Loading bike track information</string>
+    <string name="track_start">Start time</string>
+    <string name="track_end">End Time</string>
+    <string name="track_no_data">No bike travel data found at current time</string>
+
+    <string name="bike_map_title">Bike Map</string>
+    <string name="bike_map_menu_all">All</string>
+    <string name="bike_map_serial">Bike No:</string>
+    <string name="bike_map_power">Power:</string>
+    <string name="bike_map_detail">Details</string>
+    <string name="bike_map_100">100%</string>
+    <string name="bike_map_60">&lt;60%</string>
+    <string name="bike_map_40">&lt;40%</string>
+    <string name="bike_map_20">&lt;20%</string>
+
+    <string name="mainten_list_title">Maintenance List</string>
+    <string name="mainten_list_serial">Bike No:</string>
+    <string name="mainten_list_starting">Starting:</string>
+    <string name="mainten_list_riding">Riding:</string>
+    <string name="mainten_list_statue_service">In service</string>
+    <string name="mainten_list_statue_completed">Completed</string>
+    <string name="mainten_list_load">Getting repair information</string>
+    <string name="mianten_load">Getting repair details</string>
+    <string name="mainten_init_load">Loading vehicle information</string>
+    <string name="mainten_bike_empty">Please enter the reason for vehicle repair</string>
+
+
+    <string name="bill_title">Billing</string>
+    <string name="bill_sign">****</string>
+    <string name="bill_delete">Delete</string>
+    <string name="bill_default">set to default</string>
+    <string name="bill_empty">There is no bank card.</string>
+    <string name="bill_add">Add</string>
+    <string name="bill_list_load">Loading bank card information</string>
+    <string name="bill_list_default">The default bank card is being reset, please wait</string>
+    <string name="bill_list_delete">Unbinding the current bank card</string>
+    <string name="bill_add_error">Failed to add bank card, please try again</string>
+
+
+    <string name="add_pay_title">Add Payment</string>
+    <string name="add_pay_serial">Card Number</string>
+
+
+    <string name="deduction_record">Deduction Record</string>
+    <string name="deduction_load">Load billing information</string>
+    <string name="deduction_insurance_text">Insurance fee</string>
+    <string name="deduction_bike_text">Bike rental fee</string>
+    <string name="deduction_menu_wait">Wait</string>
+    <string name="deduction_menu_paid">Paid</string>
+
+    <!--  chek net work  -->
+    <string name="check_network_connect">Request failed, please check your network </string>
+    <string name="connect_time_out">Connection timeout</string>
+
+    <string name="xlistview_header_hint_normal">Swipe down to refresh</string>
+    <string name="xlistview_header_hint_ready">Release to refresh</string>
+    <string name="xlistview_header_hint_loading">loading...</string>
+    <string name="xlistview_header_last_time">Last update time:</string>
+    <string name="xlistview_footer_hint_normal">Swipe up to load more</string>
+    <string name="xlistview_footer_hint_ready">Release to load more</string>
+    <string name="WaringTokenExpired">Your account is logged in elsewhere, please secure your account and log in again</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="tip">Tips</string>
+
+
+    <string name="pickerview_year">year</string>
+    <string name="pickerview_month">month</string>
+    <string name="pickerview_day">day</string>
+    <string name="pickerview_hours">H</string>
+    <string name="pickerview_minutes">min</string>
+    <string name="pickerview_seconds">second</string>
+    <!--<string name="google_maps_key">AIzaSyCrewPSx4mIcu_Cmi_TxpSOqj24L_syOyY</string>-->
+
+
+    <string name="BleOadUnsupport">The device does not support Bluetooth</string>
+    <string name="BleOadOpenBluetooth">Please turn on Bluetooth first</string>
+    <string name="bluetooth_empty">The Bluetooth network of the mobile phone is abnormal, try it manually!</string>
+    <string name="device_list_title">Device List</string>
+    <string name="device_list_menu_scan">Rescan</string>
+    <string name="device_list_menu"> - - </string>
+    <string name="device_list_error">The scanning device is being ok, please exit the scanning device interface and try again.</string>
+    <string name="item_scan_name">Bluetooth name:</string>
+    <string name="item_scan_address">Bluetooth address:</string>
+    <string name="item_scan_sign">Signal:</string>
+
+
+
+
+    <string name="oad_update_tip_message">Connecting vehicle Bluetooth</string>
+    <string name="oad_config_info">Configuration information:</string>
+    <string name="oad_restart_tip">Upgrade failed, please try again after restarting Bluetooth</string>
+    <string name="oad_write_failure">Bluetooth write failed</string>
+    <string name="oad_version">Bluetooth version:</string>
+    <string name="oad_update_tip">Bluetooth is connected and can be upgraded</string>
+    <string name="oad_start_tip">Start upgrading Bluetooth</string>
+    <string name="oad_last_tip">Bluetooth is already the latest version</string>
+    <string name="oad_no_connect">Bluetooth is not connected yet!</string>
+    <string name="oad_update">Bluetooth upgrade</string>
+    <string name="oad_update_vehicle_statue">Upload vehicle status</string>
+    <string name="oad_upload">Successful upload</string>
+    <string name="oad_firmware">Firmware version:</string>
+    <string name="oad_accident">Accident details:</string>
+    <string name="oad_electric">Electricity:</string>
+    <string name="oad_electric_open">Electronic lock on</string>
+    <string name="oad_electric_close">Electronic lock off</string>
+    <string name="oad_data_error">data error</string>
+    <string name="oad_unlock_statue">Unlocked state</string>
+    <string name="oad_controller_disconnected">Controller disconnected</string>
+    <string name="oad_lease_expires">Lease expires</string>
+    <string name="oad_at_comd">ATCmd</string>
+    <string name="oad_remote_control_lock">Anti-theft device remote control lock</string>
+    <string name="oad_vehicle_deadline"><xliff:g id="day">%d</xliff:g> day<xliff:g id="hour">%d</xliff:g> hour<xliff:g id="minute">%d</xliff:g> minute<xliff:g id="seconds">%d</xliff:g> seconds</string>
+    <string name="oad_vehicle_electric">Total power:<xliff:g id="total_power">%d</xliff:g> Remaining battery:<xliff:g id="remaining_battery">%d</xliff:g>This power:<xliff:g id="this_power">%d</xliff:g>Percentage remaining:<xliff:g id="percentage_remaining">%s</xliff:g></string>
+    <string name="oad_kilometer">Kilometer</string>
+    <string name="oad_total_mileage">Total mileage:</string>
+    <string name="oad_remaining_mileage">Remaining mileage:</string>
+    <string name="oad_this_mileage">This mileage:</string>
+    <string name="oad_motor_faulty">Electric machine mulfunction</string>
+    <string name="oad_motor_normal">Vehicle motor function is normal</string>
+    <string name="oad_protected_faulty">Undervoltage protection</string>
+    <string name="oad_protected_normal">Vehicle battery undervoltage protection function is normal</string>
+    <string name="oad_controller_faulty">Controller mulfunction</string>
+    <string name="oad_controller_normal">Vehicle controller is normal</string>
+    <string name="oad_handle_normal">The vehicle handle is in normal condition</string>
+    <string name="oad_handle_faulty">Shifter mulfunction</string>
+    <string name="oad_moter_hall_failure">Hall mulfunction</string>
+    <string name="oad_moter_hall_normal">Vehicle motor Hall is normal</string>
+    <string name="oad_line_failure">YXT line mulfunction</string>
+    <string name="oad_line_normal">Vehicle communication line is normal</string>
+    <string name="BleVersion">version number</string>
+    <string name="BleFault">accident details</string>
+    <string name="BikeEleTitle">Electricity</string>
+    <string name="Lat">longitude</string>
+    <string name="Lng">latitude</string>
+    <string name="oad_on_problem">No Fault</string>
+    <string name="oad_comm_universal">Communication method: Universal version</string>
+    <string name="oad_comm_touch">Communication method: One-touch</string>
+    <string name="oad_omm_double">Communication method: Two-way control version</string>
+
+    <string name="connect_saddle_unlock">saddle unlocked</string>
+    <string name="connect_saddle_lock">Saddle locked</string>
+    <string name="connect_saddle_unlocking">Locking saddle…</string>
+    <string name="connect_saddle_locking">The saddle lock is in operation, please unlock saddle later </string>
+    <string name="connect_saddle_open">Failed to unlock saddle, please make sure the electric machine is off before unlocking the saddle.</string>
+    <string name="connect_saddle_close">Heat protection is on and the bike is locked, please try again after 20 seconds</string>
+
+    <string name="connect_failure">Vehicle Bluetooth is connected or not in range</string>
+</resources>

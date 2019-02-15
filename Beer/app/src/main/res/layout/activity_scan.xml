@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/scan_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/actionbar_container"
+        />
+
+
+    <!-- 绘制动画 -->
+
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/qr_surface"
+        android:layout_below="@+id/scan_actionbar"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/qr_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/scan_actionbar"
+
+        >
+        <ImageView
+            android:id="@+id/scan_vehicle"
+            android:layout_width="100dp"
+            android:layout_height="66dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/scan_vehicle"
+            android:layout_marginTop="74dp"
+            />
+        <ImageView
+            android:id="@+id/scan_rectangle"
+            android:layout_width="255dp"
+            android:layout_height="255dp"
+            android:layout_marginTop="140dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/scan_rectangle"
+            />
+
+        <com.blue.elephant.custom.scan.QRAnim
+            android:layout_width="255dp"
+            android:layout_height="255dp"
+            android:layout_marginTop="140dp"
+            android:layout_centerHorizontal="true"/>
+
+        
+        <RelativeLayout
+            android:layout_width="255dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/scan_rectangle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            >
+
+            
+            <RelativeLayout
+                android:id="@+id/scan_number"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                >
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/scan_n"
+                    android:src="@mipmap/scan_number"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scan_number"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/scan_n"
+                    android:layout_marginTop="4dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/scan_flash"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                >
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/scan_f"
+                    android:src="@mipmap/scan_light"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scan_flash"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/scan_f"
+                    android:layout_marginTop="4dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+
+</RelativeLayout>

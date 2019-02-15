@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- QR id -->
+    <item name="decode" type="id" />
+    <item name="decode_failed" type="id" />
+    <item name="decode_succeeded" type="id" />
+    <item name="quit" type="id" />
+    <item name="restart_preview" type="id" />
+    <item name="return_scan_result" type="id" />
+
+    <item name="close_time" type="id"/>
+
+
+    <item name="hour" type="id"/>
+    <item name="min" type="id"/>
+
+
+    <item name="picker_action_container_id" type="id"/>
+    <item name="picker_action_year" type="id"/>
+    <item name="picker_action_month" type="id"/>
+    <item name="picker_action_day" type="id"/>
+    <item name="picker_action_hour" type="id"/>
+    <item name="picker_action_min" type="id"/>
+    <item name="picker_action_second" type="id"/>
+    <item name="picker_space_1" type="id"/>
+    <item name="picker_space_2" type="id"/>
+    <item name="picker_space_3" type="id"/>
+    <item name="picker_space_4" type="id"/>
+    <item name="picker_space_5" type="id"/>
+</resources>

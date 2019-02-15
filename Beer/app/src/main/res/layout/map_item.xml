@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="264dp"
+    android:layout_height="114dp"
+    android:background="@mipmap/bike_info_pop"
+    >
+
+    <TextView
+        android:id="@+id/bike_map_serial_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bike_map_serial"
+        android:textSize="18sp"
+        android:textColor="@color/text_gray"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/bike_map_serial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_yellow"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/bike_map_serial_text"
+        android:layout_toRightOf="@+id/bike_map_serial_text"
+        android:layout_marginLeft="8dp"
+        />
+
+    <TextView
+        android:id="@+id/bike_map_power_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bike_map_power"
+        android:layout_below="@+id/bike_map_serial_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@color/text_gray"
+        />
+
+    <TextView
+        android:id="@+id/bike_map_power"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bike_map_power_text"
+        android:layout_toRightOf="@+id/bike_map_power_text"
+        android:textColor="@color/text_yellow"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/bike_map_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bike_map_detail"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_alignBaseline="@+id/bike_map_power_text"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_blue"
+        android:layout_toRightOf="@+id/bike_map_power"
+        android:layout_marginLeft="10dp"
+        />
+
+
+
+
+</RelativeLayout>

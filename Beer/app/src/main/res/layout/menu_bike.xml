@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/menu_vehicle_all"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/bike_manage_menu_all"
+        android:gravity="center"
+        />
+
+    <View
+        android:id="@+id/menu_vehicle_line1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_line_color"
+        android:layout_below="@+id/menu_vehicle_all"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/menu_vehicle_rent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/bike_manage_menu_rent"
+        android:gravity="center"
+        android:layout_below="@+id/menu_vehicle_line1"
+        />
+
+    <View
+        android:id="@+id/menu_vehicle_line2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_line_color"
+        android:layout_below="@+id/menu_vehicle_rent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/menu_vehicle_no_rent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/bike_manage_menu_no_rent"
+        android:gravity="center"
+        android:layout_below="@+id/menu_vehicle_line2"
+        />
+
+    <View
+        android:id="@+id/menu_vehicle_line3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_line_color"
+        android:layout_below="@+id/menu_vehicle_no_rent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/menu_vehicle_disable"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/bike_manage_menu_disable"
+        android:gravity="center"
+        android:layout_below="@+id/menu_vehicle_line3"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/add_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/actionbar_container"
+
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/add_serial_container"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@+id/add_actionbar"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/shape_rectangle_white"
+        >
+
+        <TextView
+            android:id="@+id/add_serial_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/add_serial"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="4dp"
+            />
+
+
+        <EditText
+            android:id="@+id/add_serial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_toRightOf="@+id/add_serial_text"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/add_serial_scan_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/add_scan"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/add_actionbar"
+        android:layout_marginTop="58dp"
+        android:layout_marginRight="18dp"
+        android:padding="6dp"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/add_frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@+id/add_serial_container"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/shape_rectangle_white"
+        >
+
+        <TextView
+            android:id="@+id/add_frame_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/add_frame"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="4dp"
+            />
+
+
+        <EditText
+            android:id="@+id/add_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_toRightOf="@+id/add_frame_text"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/add_frame_scan_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/add_scan"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/add_serial_container"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="18dp"
+        android:padding="6dp"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/add_ime_container"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@+id/add_frame_container"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/shape_rectangle_white"
+        >
+
+        <TextView
+            android:id="@+id/add_ime_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/add_imei"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="4dp"
+            />
+
+
+        <EditText
+            android:id="@+id/add_ime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_toRightOf="@+id/add_ime_text"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/add_ime_scan_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/add_scan"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/add_frame_container"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="18dp"
+        android:padding="6dp"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/add_bluetooth_container"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@+id/add_ime_container"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/shape_rectangle_white"
+        >
+
+        <TextView
+            android:id="@+id/add_bluetooth_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/add_blue"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="4dp"
+            />
+
+
+        <EditText
+            android:id="@+id/add_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_toRightOf="@+id/add_bluetooth_text"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/add_bluetooth_scan_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/add_scan"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/add_ime_container"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="18dp"
+        android:padding="6dp"
+        />
+
+
+    <TextView
+        android:id="@+id/add_submit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_below="@+id/add_bluetooth_container"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/selector_blue"
+        android:textColor="@color/white"
+        android:text="@string/add_submit"
+        android:gravity="center"
+        android:textSize="16sp"
+        />
+    
+    
+    
+
+
+</RelativeLayout>

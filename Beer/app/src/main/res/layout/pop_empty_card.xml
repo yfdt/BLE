@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_pop_rectange_white"
+        >
+
+        <TextView
+            android:id="@+id/empty_card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Tips"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/empty_card_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_card_title"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:text="@string/main_no_card"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            />
+
+
+        <Button
+            android:id="@+id/empty_card_submit"
+            android:layout_width="80dp"
+            android:layout_height="36dp"
+            android:text="@string/ok"
+            android:textColor="#0058EB"
+            android:background="@drawable/selector_button"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

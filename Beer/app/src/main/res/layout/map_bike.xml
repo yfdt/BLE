@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="264dp"
+    android:background="@mipmap/bike_info_back"
+    >
+    <TextView
+        android:id="@+id/item_info_frame_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/item_info_frame"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/item_info_frame"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_info_frame_text"
+        android:layout_marginLeft="140dp"
+        android:textColor="@color/vehicle_search_actionbar_edit"
+        android:textSize="10sp"
+        android:text="@string/empty"
+        />
+
+    <TextView
+        android:id="@+id/item_info_number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/item_info_vehicle"
+        android:layout_below="@+id/item_info_frame_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/item_info_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_info_number_text"
+        android:layout_marginLeft="140dp"
+        android:textColor="@color/vehicle_search_actionbar_edit"
+        android:textSize="10sp"
+
+        android:text="@string/empty"
+        />
+
+
+    <TextView
+        android:id="@+id/item_info_bluetooth_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/item_info_bluetooth"
+        android:layout_below="@+id/item_info_number_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/item_info_bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_info_bluetooth_text"
+        android:layout_marginLeft="140dp"
+        android:textColor="@color/vehicle_search_actionbar_edit"
+        android:textSize="10sp"
+
+        android:text="@string/empty"
+        />
+
+
+    <TextView
+        android:id="@+id/item_info_imei_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/item_info_imei_code"
+        android:layout_below="@+id/item_info_bluetooth_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/item_info_imei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_info_imei_text"
+        android:layout_marginLeft="140dp"
+        android:textColor="@color/vehicle_search_actionbar_edit"
+        android:textSize="10sp"
+        android:text="@string/empty"
+        />
+
+
+    <TextView
+        android:id="@+id/item_info_termimal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/item_info_termal"
+        android:layout_below="@+id/item_info_imei_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/item_info_terminal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_info_termimal_text"
+        android:layout_marginLeft="140dp"
+        android:textColor="@color/vehicle_search_actionbar_edit"
+        android:textSize="10sp"
+
+        android:text="@string/empty"
+        />
+
+
+
+    <TextView
+        android:id="@+id/item_info_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/item_info_vehicle_status"
+        android:layout_below="@+id/item_info_termimal_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/item_info_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_info_status_text"
+        android:layout_marginLeft="140dp"
+        android:textColor="@color/vehicle_search_actionbar_edit"
+        android:textSize="10sp"
+
+        android:text="@string/empty"
+        />
+
+    <TextView
+        android:id="@+id/item_info_gps_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/item_info_gps"
+        android:layout_below="@+id/item_info_status_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/item_info_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_info_gps_text"
+        android:layout_marginLeft="140dp"
+        android:text="@string/empty"
+        android:textColor="@color/vehicle_search_actionbar_edit"
+
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/item_info_last_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/item_info_last"
+        android:layout_below="@+id/item_info_gps_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/item_info_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_info_last_text"
+        android:layout_marginLeft="140dp"
+        android:textColor="@color/vehicle_search_actionbar_edit"
+        android:textSize="10sp"
+        android:text="@string/empty"
+        />
+
+    <View
+        android:layout_width="260dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/item_info_last_text"
+        />
+
+
+
+
+</RelativeLayout>

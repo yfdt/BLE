@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="pickerview">
+        <attr name="wheelview_gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="wheelview_textSize" format="dimension"/>
+        <attr name="wheelview_textColorOut" format="color"/>
+        <attr name="wheelview_textColorCenter" format="color"/>
+        <attr name="wheelview_dividerColor" format="color"/>
+        <attr name="wheelview_lineSpacingMultiplier" format="float"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="circle_view">
+
+        <attr name="linecolor" format="reference|color"/>
+        <attr name="linewidth" format="reference|dimension"/>
+        <attr name="circleRadius" format="reference|dimension"/>
+        <!-- 内圆环偏离边框的距离-->
+        <attr name="offset" format="dimension|reference"/>
+
+    </declare-styleable>
+</resources>

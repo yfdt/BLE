@@ -1,0 +1,102 @@
+
+
+维修管理界面中的蓝牙连接操作
+1. BLEConnect  0X01
+2. DevInfo   0X04
+3. HardwareVersion  0X0E
+4. ElectLock   0X0F
+5. DeadLine   0X02
+6. GuardStatus  0X03
+
+当前的网站
+http://120.195.219.108:8081/beer/platform/admin/toLogin.do
+admin
+123456
+外网：
+http://120.195.219.108:8081/beer/appcustomerapi/
+
+
+当前的备份：
+http://120.195.219.108:9090/svn/
+
+BEER——谷歌账号：
+user: chinadevteam@gmail.com
+pass: kyxcg6Vnp5x2
+
+/**
+	 * 请先登录
+90019004	 */
+	public static final int CODE_NOT_YET_LOGGIN = 90019001;
+	/**
+	 * 用户不存在
+	 */
+	public static final int CODE_USERNAME_NOT_EXIST = 90019002;
+	/**
+	 * 密码不正确
+	 */
+	public static final int CODE_PASSWORD_INCORRECT = 90019003;
+
+	/**
+	 * token不正确
+	 */
+	public static final int CODE_TOKEN_INCORRECT = 90019004;
+
+
+当前创建订单的指令：
+（1）显示按钮
+1. AT+DevInfo=?   0X04
+2. AT+HardwareVersion=?   0X0E
+3. AT+DeadLine  (租期一天内有效) 0X02
+4. AT+ElectLock=?  0X0F
+5. AT+GuardStatus=0 0X03  解锁显示界面
+
+当前结束订单的指令：
+（1）显示按钮
+1. AT+DevInfo=?   0X04
+2. AT+HardwareVersion=?   0X0E
+3. AT+ElectLock=?  0X0F
+4. AT+GuardStatus=0 0X03  解锁显示界面
+
+（2）结束订单
+5.  AT+DeadLine  (租期设置为0) 0X02
+6. AT+GuardStatus=1 0X03  结束操作
+
+
+
+当前创建维修订单的指令：
+（1） 显示按钮
+
+1. AT+DevInfo=?   0X04
+2. AT+HardwareVersion=?   0X0E
+3. AT+DeadLine=?  0X02
+如果租期时间不为0，那么该车辆在维修中（逻辑未设置，先空余，）
+3. AT+ElectLock=?  0X0F
+4. AT+GuardStatus=0 0X03  解锁显示界面
+（2） 创建菜单
+5. AT+DeadLine   0X02
+
+结束维修指令：
+1. AT+DevInfo=?   0X04
+2. AT+HardwareVersion=?   0X0E
+3. AT+DeadLine=?  0X02
+AT+ElectLock=? 0X0F
+AT+GuardStatus=0 0X03
+
+如果租期结束，直接更新
+否则，设置租期，结束
+
+
+Current modified place
+
+The previously modified class is
+EndOfOrderActivity
+RentBikeActivity
+ScanActivity
+
+After modification, use the ‘modify song' tag to retrieve the current tag found
+
+Modified question:
+1.6.0 or above mobile phone camera permissions dynamic authorization
+2. End the order prompt box flashback problem
+3. The connection is interrupted after the vehicle is disconnected from Bluetooth, and manual restart is required.
+4. Update vehicle status

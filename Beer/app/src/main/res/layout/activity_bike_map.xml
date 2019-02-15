@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/bike_map_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/actionbar_container"
+        />
+
+
+
+    <fragment
+        android:id="@+id/bike_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_below="@+id/bike_map_actionbar"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="40dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        >
+
+        <TextView
+            android:id="@+id/bike_map_100"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_circle_cyan"
+            android:layout_gravity="center_vertical"
+            android:text="@string/bike_map_100"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+
+        <TextView
+            android:id="@+id/bike_map_60"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_circle_blue"
+            android:layout_gravity="center_vertical"
+            android:text="@string/bike_map_60"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/bike_map_40"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_circle_red"
+            android:gravity="center"
+            android:text="@string/bike_map_40"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/bike_map_20"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_circle_yellow"
+            android:text="@string/bike_map_20"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+    
+
+
+</RelativeLayout>

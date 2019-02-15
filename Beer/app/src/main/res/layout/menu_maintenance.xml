@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/menu_maintenance_all"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/bike_manage_menu_all"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+    <View
+        android:id="@+id/menu_maintenance_line1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_line_color"
+        android:layout_below="@+id/menu_maintenance_all"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/menu_maintenance_in"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/mainten_list_statue_service"
+        android:gravity="center"
+        android:layout_below="@+id/menu_maintenance_line1"
+        />
+
+    <View
+        android:id="@+id/menu_maintenance_line2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_line_color"
+        android:layout_below="@+id/menu_maintenance_in"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/menu_maintenance_stop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/mainten_list_statue_completed"
+        android:gravity="center"
+        android:layout_below="@+id/menu_maintenance_line2"
+        />
+
+</RelativeLayout>

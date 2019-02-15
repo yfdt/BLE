@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0058EB</color>
+    <!-- 通知栏 -->
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorTheme">#0058EB</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="hint_color">#9B9B9B</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimarys">#0051EB</color>
+
+    <color name="text_gray">#4A4A4A</color>
+    <color name="text_gray1">#9B9B9B</color>
+    <color name="text_gray2">#F0F4F7</color>
+    <color name="text_gray3">#CCCED0</color>
+
+    <color name="blue_light">#03AEF0</color>
+
+    <color name="transport">#00FFFFFF</color>
+
+    <color name="text_yellow">#F5A623</color>
+
+    <color name="text_red">#D0021B</color>
+
+    <color name="text_green">#239602</color>
+    <color name="vehicle_search_actionbar_edit">#F8C061</color>
+
+    <color name="cyan">#0058EB</color>
+    <color name="light_cyan">#0057EB</color>
+
+    <color name="blue">#03AEF0</color>
+    <color name="light_blue">#03DCF0</color>
+
+    <color name="red">#CF021B</color>
+    <color name="light_red">#FF021B</color>
+
+    <color name="yellow">#F5A623</color>
+    <color name="light_yellow">#F5BA23</color>
+
+    <color name="gray_line_color">#D3DFEF</color>
+
+    <color name="bill_normal_card">#014986</color>
+    <color name="gray">#828282</color>
+
+
+    <color name="picker_text_out">#FFA8A8A8</color>
+    <color name="picker_text_center">#FF2A2A2A</color>
+    <color name="picker_divider">#FFD5D5D5</color>
+    <color name="light_gray">#F0F0F0</color>
+</resources>

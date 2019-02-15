@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_gray2"
+    >
+
+    <include
+        android:id="@+id/insurance_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/actionbar_container"
+        />
+
+    <ImageView
+        android:id="@+id/insurance_header"
+        android:layout_width="102dp"
+        android:layout_height="102dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/insurance_actionbar"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/insurance_security"
+        />
+    
+    <Button
+        android:id="@+id/insurance_yes"
+        android:layout_width="246dp"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/insurance_header"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/selector_blue"
+        android:text="@string/insurance_ok"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        />
+
+    <Button
+        android:id="@+id/insurance_no"
+        android:layout_width="246dp"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/insurance_yes"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_yellow"
+        android:text="@string/insurance_no"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        />
+
+</RelativeLayout>

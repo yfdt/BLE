@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/bike_info_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/bike_info_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back_arraw"
+            />
+
+        <TextView
+            android:id="@+id/bike_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="@string/bike_info_title"
+            />
+
+
+        <ImageView
+            android:id="@+id/bike_info_menu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/main_menu"
+            android:paddingLeft="8dp"
+            android:paddingRight="2dp"
+            android:paddingTop="9dp"
+            android:paddingBottom="6dp"
+            />
+
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/bike_info_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bike_info_actionbar"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        />
+
+
+
+
+</RelativeLayout>

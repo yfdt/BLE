@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_gray2">
+
+    <include
+        android:id="@+id/upload_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/actionbar_container"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/upload_actionbar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/upload_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="@string/upload_tips"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="14dp"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/upload_pic_container"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@+id/upload_tips"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:background="@color/white"
+                >
+
+                <ImageView
+                    android:id="@+id/upload_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/upload_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="78dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/upload_pic_camera"
+                        android:src="@mipmap/upload_camera"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="150dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/upload_pic_camera"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/upload_camera"
+                        android:textColor="#4A4A4A"
+                        android:textSize="18sp"
+                        android:layout_marginTop="25dp"
+                        />
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/upload_submit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="60dp"
+                android:layout_below="@+id/upload_pic_container"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="@string/upload_submit"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_blue"
+                android:layout_marginBottom="30dp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

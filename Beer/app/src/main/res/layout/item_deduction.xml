@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/item_deduction_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="24dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray"
+
+        />
+
+
+    <TextView
+        android:id="@+id/item_deduction_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_deduction_time"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/deduction_insurance_text"
+        />
+
+    <TextView
+        android:id="@+id/item_deduction_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_deduction_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:textSize="18sp"
+        android:textColor="@color/text_red"
+        />
+
+
+    <TextView
+        android:id="@+id/item_deduction_bike_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_deduction_name"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:textColor="@color/text_gray"
+        android:text="@string/deduction_bike_text"
+        />
+
+
+    <TextView
+        android:id="@+id/item_deduction_bike_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_deduction_bike_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:textSize="18sp"
+        android:textColor="@color/text_red"
+        />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_deduction_bike_text"
+        android:layout_marginTop="17dp"
+        android:background="@color/text_gray2"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include
+          android:id="@+id/main_detail_actionbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          layout="@layout/actionbar_container"
+        />
+
+    <TextView
+        android:id="@+id/main_detail_status"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/main_detail_actionbar"
+        android:layout_marginLeft="24dp"
+        android:gravity="center|left"
+        android:text="Bike OFF"
+        android:textSize="18sp"
+        android:textColor="@color/text_red"
+        />
+
+    <TextView
+        android:id="@+id/main_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@+id/main_detail_actionbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:gravity="center|right"
+        />
+
+
+      <View
+          android:id="@+id/main_detail_line1"
+          android:layout_width="match_parent"
+          android:layout_height="12dp"
+          android:background="@color/text_gray2"
+          android:layout_below="@+id/main_detail_status"
+          />
+
+
+    <TextView
+        android:id="@+id/main_detail_serial_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_detail_line1"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/frag_detail_record_text"
+        android:textSize="18sp"
+        android:textColor="@color/text_gray"
+        />
+
+    <TextView
+        android:id="@+id/main_detail_serial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/main_detail_serial_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:textColor="@color/text_yellow"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/main_detail_start_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_detail_serial_text"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/frag_detail_start"
+        android:textSize="18sp"
+        android:textColor="@color/text_gray"
+        />
+
+    <TextView
+        android:id="@+id/main_detail_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/main_detail_start_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:textColor="@color/text_yellow"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/main_detail_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_detail_start_text"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/frag_detail_maintenance"
+        android:textSize="18sp"
+        android:textColor="@color/text_gray"
+        />
+
+    <TextView
+        android:id="@+id/main_detail_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/main_detail_time_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:textSize="18sp"
+        android:textColor="@color/text_yellow"
+        />
+
+
+    <View
+        android:id="@+id/main_detail_line2"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_below="@+id/main_detail_time_text"
+        android:layout_marginTop="24dp"
+        android:background="@color/text_gray2"
+        />
+
+    <TextView
+        android:id="@+id/main_detail_failure_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_detail_line2"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="@string/frag_detail_failure_text"
+        android:textSize="18sp"
+        android:textColor="@color/text_gray"
+        />
+
+    <TextView
+        android:id="@+id/main_detail_failure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_detail_failure_text"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/text_yellow"
+        android:textSize="18sp"
+        />
+
+    <View
+        android:id="@+id/main_detail_line3"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/text_gray2"
+        android:layout_below="@+id/main_detail_failure"
+        />
+
+
+    <TextView
+        android:id="@+id/main_detail_advice_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_detail_line3"
+        android:layout_marginLeft="24dp"
+        android:text="@string/frag_detail_advice"
+        android:textColor="@color/text_gray"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        />
+
+    <TextView
+        android:id="@+id/main_detail_advice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_below="@+id/main_detail_advice_text"
+        android:textSize="18sp"
+        android:textColor="@color/text_yellow"
+        android:layout_marginBottom="24dp"
+        />
+
+
+    <View
+        android:layout_below="@+id/main_detail_advice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/text_gray2"
+        />
+
+
+
+    
+
+
+</RelativeLayout>
